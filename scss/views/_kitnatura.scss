@@ -1,0 +1,28 @@
+/*----------------------- PAG: KITNATURA ------------------*/
+
+.mainKitNatura{
+    display: flex;
+    justify-content: center;
+    &__section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr ;      
+        gap: 2px;
+        width: 63vw;
+        height: 50vh;        
+    }
+    &__article{
+        div {
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                &:hover{
+                    transition: all ease .5s;
+                    transform: scale(1.5);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}

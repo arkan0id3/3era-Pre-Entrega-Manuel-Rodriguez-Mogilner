@@ -1,0 +1,47 @@
+/*----------------------- PAG: CONTACTO ----------------------*/
+
+
+/*---- Main ----*/
+.mainContacto {
+    display: flex;
+    flex-wrap: nowrap;    
+    justify-content: center;
+    .divPrincipal {
+        width: 80vw;
+        height: 83.4vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*---- Section ----*/
+
+        .section1{
+            padding: 20px;
+            background-color: #98e7b18c;
+            margin: 20px;
+            display:flex;
+        }           
+        .section2 {
+            background-color: rgba(77,49,86,0.8);
+            padding: 20px;
+            margin: 20px;    
+            text-align: end;
+            div{    
+                display: flex;
+                align-content: flex-end;
+                img{
+                    width: 20%;
+                    height: 20%;
+                }
+            }
+        }    
+    }        
+}
+
+
+@media (max-width: 576px){
+    .mainContacto {
+        overflow-y: scroll;
+        .divPrincipal{
+            grid-template-columns: 1fr;
+        }        
+    }
+}
